@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+</head>
+<body>
+    <button id="Button">Click Me</button>
+    <div id="div"></div>
+
+    <script>
+
+        const button = document.getElementById('Button');
+        const div = document.getElementById('div');
+
+        button.addEventListener('click', function() {
+            div.textContent = 'Button Clicked!';
+        });
+    </script>
+</body>
+</html>

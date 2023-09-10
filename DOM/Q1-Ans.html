@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating Element</title>
+</head>
+<body>  
+  <button onclick="Text()">Click Me</button>
+<div id="container" style="display: none;">
+  HELLO DOM!
+</div>
+
+<script>
+  function Text() {
+  let text = document.getElementById("container");
+  text.style.display = "block";
+}
+</script>
+  
+</body>
+</html>

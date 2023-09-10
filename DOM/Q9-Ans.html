@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content Toggle</title>
+</head>
+<body>
+
+<button onclick=Toogle()>Click to Check</button>
+
+<p id="hide" style="display: none">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    Cumque dignissimos voluptatibus magnam accusantium, neque quisquam eaque illum commodi fugit accusamus,
+     ratione optio exercitationem repudiandae odio qui nobis pariatur quasi reprehenderit!
+</p>
+
+<script>
+function Toogle() {
+    let T = document.getElementById("hide"),
+        displayValue = "";
+    if (T.style.display == "")
+        displayValue = "none";
+
+    T.style.display = displayValue;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+

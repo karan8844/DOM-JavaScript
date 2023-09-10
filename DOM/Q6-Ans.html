@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COUNTER</title>
+</head>
+<body style="text-align: center;">
+    
+    <h2> COUNTER</h2>
+    <div>
+      <div id="increment">
+        <button  id="up-arrow" style="height: 30px; width: 200px;  "> </button>
+      </div>
+      <span id="total-count">
+      </span>
+      <div id="decrement">
+        <button  id="down-arrow" style="height: 30px; width: 200px; "   ></button>
+      </div>
+    </div>
+    
+    
+    <script>
+      const increment = document.getElementById("increment");
+      const decrement = document.getElementById("decrement");
+  
+      const totalCount = document.getElementById("total-count");
+      
+let count = 0;
+totalCount.innerHTML = count;
+
+const handleIncrement = () => {
+  count++;
+  totalCount.innerHTML = count;
+};
+
+const handleDecrement = () => {
+  count--;
+  totalCount.innerHTML = count;
+};
+
+increment.addEventListener("click", handleIncrement);
+decrement.addEventListener("click", handleDecrement);
+
+</script>
+
+</body>
+
+</html>
+
+

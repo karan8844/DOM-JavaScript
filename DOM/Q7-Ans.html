@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>todo list</title>
+</head>
+
+<body>
+	<div>
+
+		<ul id="list"></ul>
+		
+		<input type="text" id="task" />
+		<button onclick="addtask()">
+			Add Task</button>
+			<button onclick="removetask()" >
+				Delete Task </button>
+						
+				<script>
+					function addtask() {
+						let a = document.getElementById("list");
+						let  item= document.getElementById("task");
+						let li = document.createElement("li");
+						li.setAttribute('id', item.value);
+						li.appendChild(document.createTextNode(item.value));
+						a.appendChild(li);
+					}
+						
+					function removetask() {
+				
+						let a = document.getElementById("list");
+						let candidate = document.getElementById("task");
+						let task= document.getElementById(candidate.value);
+						a.removeChild(task);
+					}
+					</script>
+					</div>
+</body>
+
+</html>
+
+
+
+
+
